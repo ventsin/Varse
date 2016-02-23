@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
 	std::cout << "Width: " << width << std::endl;
 	std::cout << "Height: " << height << std::endl;
 
-	system("pause");
+	getchar();
 
 	return 0;
 }

@@ -11,19 +11,19 @@ struct map
 
 void Parser::setToken(std::string str, std::function<void(int)> func)
 {
-	func(1440);
+	//func(1440);
 	m_tokens->m_intmap[str] = func;
 }
 
 void Parser::setToken(std::string str, std::function<void(float)> func)
 {
-	func(1440.f);
+	//func(1440.f);
 	m_tokens->m_floatmap[str] = func;
 }
 
 void Parser::setToken(std::string str, std::function<void(std::string)> func)
 {
-	func("1440");
+	//func("1440");
 	m_tokens->m_stringmap[str] = func;
 }
 
