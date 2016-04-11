@@ -5,16 +5,18 @@
 
 class Value;
 
-struct map;
+struct pairs;
 
 class Parser
 {
 public:
 	//void f(std::function< int(int) >& lambda);
+	void setToken(std::string, std::function<void(void)>);
 	void setToken(std::string, std::function<void(int)>);
 	void setToken(std::string, std::function<void(float)>);
 	void setToken(std::string, std::function<void(std::string)>);
 	//void setToken(std::wstring, function);
+	bool parse(std::vector<std::string>);
 	bool parse(int argc, char* argv[]);
 	void setIgnoreMode(bool b) { m_ignore = b; };
 
@@ -22,7 +24,7 @@ public:
 	void setDelimiter(char);
 
 private:
-	map* m_tokens = {};
+	pairs* m_tokens = {};
 	//char m_delimiter = ' ';
 	bool m_ignore = true;
 };
