@@ -1,13 +1,12 @@
 #include <iostream>
+#include <functional>
 #include <Varse/Varse.hpp>
-//using namespace va;
 
 int main(int argc, char* argv[])
 {
 	int width = 800, height = 600;
 
-	Parser parser;
-	//parser.setDelimiter(' ');
+	va::Parser parser;
 
 	parser.setToken("-w", std::function<void(int)>([&](int next)
 		{width = next; }));

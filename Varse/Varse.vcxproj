@@ -20,12 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Parser.hpp" />
-    <ClInclude Include="Value.hpp" />
     <ClInclude Include="Varse.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Parser.cpp" />
-    <ClCompile Include="Value.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{087F2CEA-A318-4D18-B4F4-4EB250219EBA}</ProjectGuid>
